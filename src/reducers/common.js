@@ -18,7 +18,7 @@ import {
 } from '../constants/actionTypes';
 
 const defaultState = {
-  appName: 'Conduit',
+  appName: 'Practicum Project Kitchen',
   token: null,
   viewChangeCounter: 0
 };
