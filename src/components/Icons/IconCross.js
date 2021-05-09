@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgKrestik(props) {
+function SvgIconCross(props) {
   return (
     <svg
       width={24}
@@ -20,4 +20,4 @@ function SvgKrestik(props) {
   );
 }
 
-export default SvgKrestik;
+export default SvgIconCross;
