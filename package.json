@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "cross-env": "^5.1.4",
     "react-scripts": "1.1.1"
   },
