@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgSetting(props) {
+function SettingIcon(props) {
   return (
     <svg
       width={24}
@@ -27,4 +27,4 @@ function SvgSetting(props) {
   );
 }
 
-export default SvgSetting;
+export default SettingIcon;

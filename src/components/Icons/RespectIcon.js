@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgLogin(props) {
+function RespectIcon(props) {
   return (
     <svg
       width={24}
@@ -10,7 +10,7 @@ function SvgLogin(props) {
       {...props}
     >
       <path
-        d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5m0 0l-5-5m5 5H3"
+        d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3m7-2V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a1.999 1.999 0 00-2-2.3H14z"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -20,4 +20,4 @@ function SvgLogin(props) {
   );
 }
 
-export default SvgLogin;
+export default RespectIcon;

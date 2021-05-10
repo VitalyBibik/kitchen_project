@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgFollowing(props) {
+function FollowingIcon(props) {
   return (
     <svg
       width={24}
@@ -20,4 +20,4 @@ function SvgFollowing(props) {
   );
 }
 
-export default SvgFollowing;
+export default FollowingIcon;

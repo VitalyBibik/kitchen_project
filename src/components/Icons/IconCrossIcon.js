@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgIconCross(props) {
+function IconCrossIcon(props) {
   return (
     <svg
       width={24}
@@ -20,4 +20,4 @@ function SvgIconCross(props) {
   );
 }
 
-export default SvgIconCross;
+export default IconCrossIcon;

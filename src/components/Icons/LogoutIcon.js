@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgRespect(props) {
+function LogoutIcon(props) {
   return (
     <svg
       width={24}
@@ -10,7 +10,7 @@ function SvgRespect(props) {
       {...props}
     >
       <path
-        d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3m7-2V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a1.999 1.999 0 00-2-2.3H14z"
+        d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5m0 0l-5-5m5 5H9"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -20,4 +20,4 @@ function SvgRespect(props) {
   );
 }
 
-export default SvgRespect;
+export default LogoutIcon;

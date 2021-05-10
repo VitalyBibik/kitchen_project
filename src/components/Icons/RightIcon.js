@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgLeft(props) {
+function RightIcon(props) {
   return (
     <svg
       width={24}
@@ -10,7 +10,7 @@ function SvgLeft(props) {
       {...props}
     >
       <path
-        d="M11 17l-5-5 5-5M18 17l-5-5 5-5"
+        d="M13 17l5-5-5-5M6 17l5-5-5-5"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -20,4 +20,4 @@ function SvgLeft(props) {
   );
 }
 
-export default SvgLeft;
+export default RightIcon;

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgCopy(props) {
+function EditIcon(props) {
   return (
     <svg
       width={24}
@@ -10,14 +10,14 @@ function SvgCopy(props) {
       {...props}
     >
       <path
-        d="M20 9h-9a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-9a2 2 0 00-2-2z"
+        d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"
+        d="M18.5 2.5a2.121 2.121 0 113 3L12 15l-4 1 1-4 9.5-9.5z"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -27,4 +27,4 @@ function SvgCopy(props) {
   );
 }
 
-export default SvgCopy;
+export default EditIcon;

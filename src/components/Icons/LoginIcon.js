@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgLogout(props) {
+function LoginIcon(props) {
   return (
     <svg
       width={24}
@@ -10,7 +10,7 @@ function SvgLogout(props) {
       {...props}
     >
       <path
-        d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5m0 0l-5-5m5 5H9"
+        d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5m0 0l-5-5m5 5H3"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -20,4 +20,4 @@ function SvgLogout(props) {
   );
 }
 
-export default SvgLogout;
+export default LoginIcon;

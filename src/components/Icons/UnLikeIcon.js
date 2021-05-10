@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgUnLike(props) {
+function UnLikeIcon(props) {
   return (
     <svg
       width={22}
@@ -19,4 +19,4 @@ function SvgUnLike(props) {
   );
 }
 
-export default SvgUnLike;
+export default UnLikeIcon;

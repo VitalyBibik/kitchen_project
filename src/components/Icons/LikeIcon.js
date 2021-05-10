@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgLike(props) {
+function LikeIcon(props) {
   return (
     <svg
       width={22}
@@ -17,4 +17,4 @@ function SvgLike(props) {
   );
 }
 
-export default SvgLike;
+export default LikeIcon;

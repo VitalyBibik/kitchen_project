@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function SvgFollow(props) {
+function UnFollowIcon(props) {
   return (
     <svg
       width={24}
@@ -10,7 +10,7 @@ function SvgFollow(props) {
       {...props}
     >
       <path
-        d="M12 5v14M5 12h14"
+        d="M5 12h14"
         stroke="#EBEBEB"
         strokeWidth={2}
         strokeLinecap="round"
@@ -20,4 +20,4 @@ function SvgFollow(props) {
   );
 }
 
-export default SvgFollow;
+export default UnFollowIcon;
