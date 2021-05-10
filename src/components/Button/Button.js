@@ -27,5 +27,5 @@ Button.propTypes = {
     icon:PropTypes.bool,
     text:PropTypes.string.isRequired,
     onClick:PropTypes.func,
-    type:PropTypes.oneOf(['Primary', 'Secondary']),
+    type:PropTypes.oneOf(['Primary', 'Secondary']).isRequired,
 }
