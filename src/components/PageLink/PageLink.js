@@ -24,9 +24,7 @@ export const PageLink = ({ text, type='Number', onClick  }) => {
 }
 
 PageLink.propTypes = {
-    icon:PropTypes.bool,
     text:PropTypes.string,
     onClick:PropTypes.func,
-    type:PropTypes.oneOf(['Number', 'ArrowLeft', 'ArrowRight']).isRequired,
-    style:PropTypes.oneOf(['Black', 'Grey', 'Red']),
+    type:PropTypes.oneOf(['Number', 'ArrowLeft', 'ArrowRight']).isRequired
 }
