@@ -19,15 +19,16 @@ $mainColor:#FF0000;
     background: #0A0A0A;
     color: $mainColor;
   }
-  &_secondary {
-    background:none;
-    color:$mainColor;
 
-    &:hover {
-      font-weight: normal;
-      text-decoration-line: underline;
-      background: none;
-    }
+}
+.button-secondary {
+  background:none;
+  color:$mainColor;
+
+  &:hover {
+    font-weight: normal;
+    text-decoration-line: underline;
+    background: none;
   }
 }
 .text {

@@ -13,7 +13,7 @@ export const Button = ({  icon , children, type='Primary', className='', onClick
         </button>
     }
     if (type === 'Secondary') {
-        return <button className={cn(styles.button, styles.button_secondary)} onClick={onClick}>{children}
+        return <button className={cn(styles.button, styles['button-secondary'])} onClick={onClick}>{children}
         </button>
     }
 
