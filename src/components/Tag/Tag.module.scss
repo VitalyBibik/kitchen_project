@@ -1,0 +1,27 @@
+$BlackColor:#0A0A0A;
+$GreyColor:#373D43;
+$RedColor:#FF0000;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $BlackColor;
+  color: #EBEBEB;
+  font-size: 16px;
+  font-weight: 700;
+  padding: .25rem .5rem;
+  border: none;
+
+  &:hover {
+    background-color: $GreyColor;
+  }
+
+  &:active {
+    background-color: $RedColor;
+  }
+
+}
+
+
+

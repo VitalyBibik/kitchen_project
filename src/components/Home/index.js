@@ -9,7 +9,6 @@ import {
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
-import SvgLike from "../../images/Like";
 const Promise = global.Promise;
 
 const mapStateToProps = state => ({

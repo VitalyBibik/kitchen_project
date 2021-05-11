@@ -1,0 +1,9 @@
+@import-normalize; /* bring in normalize.css styles */
+
+@font-face {
+    font-family: Consolas;
+    src: url("./asserts/fonts/consola.ttf") format("truetype");
+}
+body {
+    font-family: Consolas, sans-serif, Arial;
+}
