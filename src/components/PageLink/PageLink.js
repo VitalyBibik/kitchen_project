@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import styles from './PageLink.module.scss'
 import { LeftIcon, RightIcon } from "../Icons";
 
-export const PageLink = ({ text, type='Number', onClick  }) => {
+export const PageLink = ({ children, type='Number', onClick  }) => {
     if (type === 'Number') {
         return <button className={styles.button} onClick={onClick}>
-            {text}
+            {children}
         </button>
     }
     if (type === 'ArrowLeft') {
@@ -24,7 +24,7 @@ export const PageLink = ({ text, type='Number', onClick  }) => {
 }
 
 PageLink.propTypes = {
-    text:PropTypes.string,
+    children:PropTypes.string,
     onClick:PropTypes.func,
     type:PropTypes.oneOf(['Number', 'ArrowLeft', 'ArrowRight']).isRequired
 }
