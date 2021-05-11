@@ -10,5 +10,5 @@ export const Tag = ({ onClick, children  }) => {
 
 Tag.propTypes = {
     onClick:PropTypes.func,
-    children:PropTypes.string,
+    children:PropTypes.string.isRequired,
 }
