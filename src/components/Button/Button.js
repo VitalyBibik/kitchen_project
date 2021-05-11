@@ -18,7 +18,6 @@ export const Button = ({  icon = false, text, type='Primary', onClick  }) => {
         </button>
     }
 
-
 }
 
 

@@ -9,6 +9,7 @@ import {
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
+import {Tag} from "../Tag/Tag";
 const Promise = global.Promise;
 
 const mapStateToProps = state => ({
@@ -45,6 +46,7 @@ class Home extends React.Component {
       <div className="home-page">
         <Banner token={this.props.token} appName={this.props.appName} />
         <div className="container page">
+          <Tag >test</Tag>
           <div className="row">
             <MainView />
             <div className="col-md-3">
