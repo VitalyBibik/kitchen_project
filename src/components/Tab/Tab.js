@@ -1,24 +1,25 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import styles from './Tab.module.scss'
+import cn from "classnames";
 
-export const Tab = ({ text, onClick, active= false  }) => {
+export const Tab = ({ children, onClick, active= false  }) => {
     if (active) {
         return <button className={styles.button} onClick={onClick}>
-           {text}
+           {children}
         </button>
     } else {
         return <button className={styles.button} onClick={onClick}>
-           {`#${text}`}
+           {`#${children}`}
         </button>
     }
 
 }
 
 Tab.propTypes = {
-    text:PropTypes.string.isRequired,
+    children:PropTypes.string.isRequired,
     onClick:PropTypes.func,
     active:PropTypes.bool.isRequired
 }
 
-// TODO Посмотреть решетку в действии при useState
+// TODO Посмотреть решетку в действии при useState Оставить пока так
