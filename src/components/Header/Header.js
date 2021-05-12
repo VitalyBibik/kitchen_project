@@ -10,9 +10,9 @@ import cn from "classnames";
 
 export const Header = ({ appName, currentUser }) => {
     return (
-        <nav className={cn("navbar", styles.ground )}>
-            <div className="container">
-                <Link to="/" className="navbar-brand">
+        <nav className={cn(styles.ground)}>
+            <div className={styles.container}>
+                <Link to="/" className={styles["navbar-brand"]}>
                     {appName()}
                 </Link>
                 <LoggedOutView currentUser={currentUser} />

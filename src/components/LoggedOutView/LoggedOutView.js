@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styles from './LoggedOutView.module.scss'
+import cn from "classnames";
 import PropTypes from "prop-types";
 
 // TODO нужный компонент Side-Bar
@@ -7,24 +9,24 @@ import PropTypes from "prop-types";
 export const LoggedOutView = ({ currentUser }) => {
     if (!currentUser) {
         return (
-            <ul className="nav navbar-nav pull-xs-right">
+            <ul className={cn(styles.nav, styles.right)}>
 
-                <li className="nav-item">
-                    <Link to="/" className="nav-link">
+                <li className={styles['nav-item']}>
+                    <NavLink exact to="/" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
 
-                <li className="nav-item">
-                    <Link to="/login" className="nav-link">
+                <li className={styles['nav-item']}>
+                    <NavLink to="/login" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
                         Sign in
-                    </Link>
+                    </NavLink>
                 </li>
 
-                <li className="nav-item">
-                    <Link to="/register" className="nav-link">
+                <li className={styles['nav-item']}>
+                    <NavLink to="/register" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
                         Sign up
-                    </Link>
+                    </NavLink>
                 </li>
 
             </ul>

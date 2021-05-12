@@ -1,6 +1,8 @@
 $active:#EBEBEB;
 $standard:#B8B8B8;
 
+// TODO выбрать цвет ховера
+
 .img {
   height: 24px;
   width: 24px;
@@ -26,8 +28,7 @@ $standard:#B8B8B8;
 
 
 .mini {
-  display: flex;
-  color: $standard;
+  display: flex;  
 }
 .mini-active {
     color: $active;
@@ -44,4 +45,32 @@ $standard:#B8B8B8;
   &:active {
     fill: $active;
   }
+}
+
+.nav-link {
+  display: block;
+padding-top: .425rem;
+padding-bottom: .425rem;
+color: $standard;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: $active; 
+}
+
+.nav-link:focus {
+  text-decoration: none;
+  color: $active;
+}
+.nav-link_active {
+  color: $active;
+  border-bottom: 1px solid $active;
+
+}
+
+.nav {
+  padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }

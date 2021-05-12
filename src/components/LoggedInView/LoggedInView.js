@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
-import {AvatarIcon, EditIcon, HomeIcon, SettingIcon} from "../Icons";
+import { AvatarIcon, EditIcon, HomeIcon, SettingIcon } from "../Icons";
 import styles from './LoggedInView.module.scss'
 import cn from "classnames";
 
@@ -10,34 +10,34 @@ import cn from "classnames";
 export const LoggedInView = ({ currentUser }) => {
     if (currentUser) {
         return (
-            <ul className={cn("nav navbar-nav", styles.right)}>
+            <ul className={cn(styles.nav, styles.right)}>
 
                 <li className={styles['nav-item']}>
-                    <Link to="/" className="nav-link">
-                       <span className={styles.mini}><HomeIcon />Главная</span>
-                    </Link>
+                    <NavLink exact to="/" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
+                        <span className={styles.mini}><HomeIcon />Главная</span>
+                    </NavLink>
                 </li>
 
                 <li className={styles['nav-item']}>
-                    <Link to="/editor" className="nav-link">
+                    <NavLink to="/editor" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
                         <span className={styles.mini}><EditIcon />Новая запись</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className={styles['nav-item']}>
-                    <Link to="/settings" className="nav-link">
+                    <NavLink to="/settings" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
                         <span className={styles.mini}><SettingIcon />Настройки</span>
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className={styles['nav-item']}>
-                    <Link
+                    <NavLink
                         to={`/@${currentUser.username}`}
-                        className="nav-link">
-                        <span className={styles.mini}> {currentUser.image ? <img src={currentUser.image} className={styles.img} alt='UserImage'/> : <AvatarIcon /> }
+                        className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
+                        <span className={styles.mini}> {currentUser.image ? <img src={currentUser.image} className={styles.img} alt='UserImage' /> : <AvatarIcon />}
                             {currentUser.username}
                         </span>
-                    </Link>
+                    </NavLink>
                 </li>
 
             </ul>
