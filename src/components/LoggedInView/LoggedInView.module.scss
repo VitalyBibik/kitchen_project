@@ -30,9 +30,10 @@ $standard:#B8B8B8;
 .nav-item {
   margin-left: 34px;
 
-  &:hover .nav-link {
+  &:hover .nav-link path {
     text-decoration: none;
     color: $active;
+    stroke: $active;
   }
 }
 
