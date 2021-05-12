@@ -26,9 +26,16 @@ $standard:#B8B8B8;
 
 }
 
-
+// TODO: нужна нормальная иконка регистрации
 .nav-item {
   margin-left: 34px;
+
+  &:hover .nav-link path {
+    text-decoration: none;
+    color: $active;
+    stroke: $active;
+  }
+
 }
 
 
@@ -51,7 +58,6 @@ $standard:#B8B8B8;
 .nav-link_active {
   color: $active;
   border-bottom: 1px solid $active;
-
 }
 
 .nav {
