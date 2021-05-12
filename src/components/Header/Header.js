@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { LoggedOutView } from "../LoggedOutView";
 import { LoggedInView } from "../LoggedInView";
+import styles from './Header.module.scss'
+import cn from "classnames";
 
 // TODO нужный компонент Side-Bar
 
 export const Header = ({ appName, currentUser }) => {
-    console.log(typeof currentUser,'cur')
     return (
-        <nav className="navbar navbar-light">
+        <nav className={cn("navbar", styles.ground )}>
             <div className="container">
                 <Link to="/" className="navbar-brand">
                     {appName()}

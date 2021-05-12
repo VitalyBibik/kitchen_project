@@ -1,0 +1,47 @@
+$active:#EBEBEB;
+$standard:#B8B8B8;
+
+.img {
+  height: 24px;
+  width: 24px;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.mini svg:first-child, .mini img:first-child {
+  margin-right: 8px;
+  stroke: $standard;
+
+  &:hover {
+    stroke: $active;
+    background-color:#66afe9;
+    transition-duration: .5s;
+    color:#66afe9;
+    border-radius: 10px;
+  }
+}
+
+
+.mini {
+  display: flex;
+  color: $standard;
+}
+.mini-active {
+    color: $active;
+
+}
+
+
+.nav-item {
+  margin-left: 34px;
+}
+.svg-item {
+  fill: $standard;
+
+  &:active {
+    fill: $active;
+  }
+}
