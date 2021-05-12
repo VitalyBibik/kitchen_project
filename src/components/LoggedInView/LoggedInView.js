@@ -53,7 +53,7 @@ export const LoggedInView = ({ currentUser }) => {
 };
 
 LoggedInView.propTypes = {
-    currentUser: PropTypes.object.isRequired
+    currentUser: PropTypes.object
 }
 
 

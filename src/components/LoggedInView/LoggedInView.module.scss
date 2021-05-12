@@ -25,7 +25,6 @@ $standard:#B8B8B8;
 }
 .mini-active {
     color: $active;
-
 }
 
 .nav-item {
@@ -36,13 +35,7 @@ $standard:#B8B8B8;
     color: $active;
   }
 }
-.svg-item {
-  fill: $standard;
 
-  &:active {
-    fill: $active;
-  }
-}
 
 .nav-link {
   display: block;
