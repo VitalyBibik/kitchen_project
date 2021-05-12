@@ -3,9 +3,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import styles from './LoggedOutView.module.scss'
 import cn from "classnames";
 import PropTypes from "prop-types";
-import {EditIcon, HomeIcon, LoginIcon, RegisterIcon} from "../Icons";
+import { HomeIcon, LoginIcon, RegisterIcon } from "../Icons";
 
-// TODO нужный компонент Side-Bar
 
 export const LoggedOutView = ({ currentUser }) => {
 

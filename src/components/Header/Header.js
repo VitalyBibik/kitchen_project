@@ -6,7 +6,6 @@ import { LoggedInView } from "../LoggedInView";
 import styles from './Header.module.scss'
 import cn from "classnames";
 
-// TODO нужный компонент Side-Bar
 
 export const Header = ({ appName, currentUser }) => {
     return (

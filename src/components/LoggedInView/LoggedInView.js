@@ -5,8 +5,6 @@ import { AvatarIcon, EditIcon, HomeIcon, SettingIcon } from "../Icons";
 import styles from './LoggedInView.module.scss'
 import cn from "classnames";
 
-// TODO нужный компонент Side-Bar Сделать наведение активной ссылки, Сделать нормальное наведение
-
 export const LoggedInView = ({ currentUser }) => {
 
     const { pathname } = useLocation()
