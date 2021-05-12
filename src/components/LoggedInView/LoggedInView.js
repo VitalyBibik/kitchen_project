@@ -34,7 +34,7 @@ export const LoggedInView = ({ currentUser }) => {
                     <Link
                         to={`/@${currentUser.username}`}
                         className="nav-link">
-                        <span className={styles.mini}> {currentUser.image ? <img src={currentUser.image} className={styles.img} alt={'UserImage'}/> : <AvatarIcon /> }
+                        <span className={styles.mini}> {currentUser.image ? <img src={currentUser.image} className={styles.img} alt='UserImage'/> : <AvatarIcon /> }
                             {currentUser.username}
                         </span>
                     </Link>
