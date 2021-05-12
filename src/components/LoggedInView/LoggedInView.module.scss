@@ -3,6 +3,7 @@ $standard:#B8B8B8;
 
 // TODO выбрать цвет ховера
 
+
 .img {
   height: 24px;
   width: 24px;
@@ -17,27 +18,23 @@ $standard:#B8B8B8;
   margin-right: 8px;
   stroke: $standard;
 
-  &:hover {
-    stroke: $active;
-    background-color:#66afe9;
-    transition-duration: .5s;
-    color:#66afe9;
-    border-radius: 10px;
-  }
 }
 
-
 .mini {
-  display: flex;  
+  display: flex;
 }
 .mini-active {
     color: $active;
 
 }
 
-
 .nav-item {
   margin-left: 34px;
+
+  &:hover .nav-link {
+    text-decoration: none;
+    color: $active;
+  }
 }
 .svg-item {
   fill: $standard;
@@ -49,14 +46,14 @@ $standard:#B8B8B8;
 
 .nav-link {
   display: block;
-padding-top: .425rem;
-padding-bottom: .425rem;
-color: $standard;
+  padding-top: .425rem;
+  padding-bottom: .425rem;
+  color: $standard;
 }
 
 .nav-link:hover {
   text-decoration: none;
-  color: $active; 
+  color: $active;
 }
 
 .nav-link:focus {
@@ -70,7 +67,7 @@ color: $standard;
 }
 
 .nav {
-  padding-left: 0;
+    padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }

@@ -13,19 +13,19 @@ export const LoggedOutView = ({ currentUser }) => {
 
                 <li className={styles['nav-item']}>
                     <NavLink exact to="/" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
-                        Home
+                        Главная
                     </NavLink>
                 </li>
 
                 <li className={styles['nav-item']}>
                     <NavLink to="/login" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
-                        Sign in
+                        Войти
                     </NavLink>
                 </li>
 
                 <li className={styles['nav-item']}>
                     <NavLink to="/register" className={styles["nav-link"]} activeClassName={styles['nav-link_active']}>
-                        Sign up
+                        Зарегистрироваться
                     </NavLink>
                 </li>
 
