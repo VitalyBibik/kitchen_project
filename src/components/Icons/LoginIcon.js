@@ -1,6 +1,7 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 
-function LoginIcon(props) {
+function LoginIcon({ stroke = '#EBEBEB', ...props }) {
   return (
     <svg
       width={24}
@@ -11,7 +12,7 @@ function LoginIcon(props) {
     >
       <path
         d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5m0 0l-5-5m5 5H3"
-        stroke="#EBEBEB"
+        stroke={stroke}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -21,3 +22,7 @@ function LoginIcon(props) {
 }
 
 export default LoginIcon;
+
+LoginIcon.propTypes = {
+  stroke: PropTypes.string
+}

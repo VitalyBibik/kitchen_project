@@ -16,9 +16,10 @@ import {
   LOGIN_PAGE_UNLOADED,
   REGISTER_PAGE_UNLOADED
 } from '../constants/actionTypes';
+import { BrandIcon } from "../components/Icons";
 
 const defaultState = {
-  appName: 'Practicum Project Kitchen',
+  appName: BrandIcon,
   token: null,
   viewChangeCounter: 0
 };
