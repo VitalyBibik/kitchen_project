@@ -1,10 +1,12 @@
+@import "../../constants/variables";
+
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--offset-base-size) calc(var(--offset-base-size) * 2);
-  background-color: var(--bg-input);
-  color: var(--text-primary);
+  padding: $offset-base-size #{$offset-base-size * 2};
+  background-color: $bg-input;
+  color: $text-primary;
   font-size: 16px;
   line-height: 16px;
   border-radius: 2px;
@@ -14,12 +16,12 @@
   transition: background-color 0.25s ease-in-out;
 
   &:hover {
-    background-color: var(--bg-accent);
+    background-color: $bg-accent;
   }
 
   &:active,
   &.active {
-    background-color: var(--bg-accent);
+    background-color: $bg-accent;
   }
 }
 

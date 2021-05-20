@@ -1,12 +1,14 @@
+@import "../../constants/variables";
+
 .tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   padding: 0;
-  margin: calc((var(--offset-base-size) / 2) * -1);
+  margin: #{($offset-base-size / 2) * -1};
   list-style: none;
 }
 
 .tag {
-  margin: calc(var(--offset-base-size) / 2);
+  margin: #{$offset-base-size / 2};
 }
