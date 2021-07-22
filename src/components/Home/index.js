@@ -1,7 +1,8 @@
 import Banner from './Banner';
 import MainView from './MainView';
 import React from 'react';
-import Tags from './Tags';
+import Sidebar from "../Sidebar/Sidebar";
+import Tags from "../Tags/Tags";
 import agent from '../../agent';
 import { connect } from 'react-redux';
 import {
@@ -9,6 +10,7 @@ import {
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER
 } from '../../constants/actionTypes';
+import PropTypes from "prop-types";
 const Promise = global.Promise;
 
 const mapStateToProps = state => ({
@@ -48,12 +50,12 @@ class Home extends React.Component {
           <div className="row">
             <MainView />
             <div className="col-md-3">
-              <div className="sidebar">
-                <p>Popular Tags</p>
+              <Sidebar
+                title="Популярные теги">
                 <Tags
                   tags={this.props.tags}
                   onClickTag={this.props.onClickTag} />
-              </div>
+              </Sidebar>
             </div>
           </div>
         </div>
@@ -61,5 +63,10 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  tags: PropTypes.array.isRequired,
+  onClickTag: PropTypes.func.isRequired
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

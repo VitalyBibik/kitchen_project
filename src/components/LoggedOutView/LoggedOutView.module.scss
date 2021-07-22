@@ -1,0 +1,67 @@
+$active:#EBEBEB;
+$standard:#B8B8B8;
+
+.img {
+  height: 24px;
+  width: 24px;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.mini svg:first-child, .mini img:first-child {
+  margin-right: 8px;
+  stroke: $standard;
+
+}
+
+
+.mini {
+  display: flex;
+}
+.mini-active {
+    color: $active;
+
+}
+
+// TODO: нужна нормальная иконка регистрации
+.nav-item {
+  margin-left: 34px;
+
+  &:hover .nav-link path {
+    text-decoration: none;
+    color: $active;
+    stroke: $active;
+  }
+
+}
+
+
+.nav-link {
+  display: block;
+  padding-top: .425rem;
+  padding-bottom: .425rem;
+  color: $standard;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: $active;
+}
+
+.nav-link:focus {
+  text-decoration: none;
+  color: $active;
+}
+.nav-link_active {
+  color: $active;
+  border-bottom: 1px solid $active;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

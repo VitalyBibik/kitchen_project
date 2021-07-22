@@ -2,8 +2,10 @@
 
 @font-face {
     font-family: Consolas;
-    src: url("./asserts/fonts/consola.ttf") format("truetype");
+    font-style: normal;
+    src: url("./asserts/fonts/consola.woff") format("woff");
 }
+
 body {
     font-family: Consolas, sans-serif, Arial;
 }
